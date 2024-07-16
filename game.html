@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/styles/game.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Game</title>
+</head>
+<body>
+  <h2>Piedra Papel o Tojera</h2>
+  <div id="board" class="board">
+    <div class="controls">
+      <button id="btn-rock">Piedra</button>
+      <button id="btn-paper">Papel</button>
+      <button id="btn-scissor">Tijera</button>
+    </div>
+    <h3 id="title-user" class="title-game title-user">Aquí va el turno del usuario</h3>
+    <hr>
+    <h3 id="title-cpu" class="title-game">Aquí va el turno de la máquina</h3>
+    <div class="play" id="play">
+      <hr>
+      <p id="current-play">Resultado del juego</p>
+    </div>
+  </div>
+  <div class="result" id="result">
+    <div  class="result-user">
+      <p id="result-user">User: 0</p>
+    </div>
+    <div class="result-cpu">
+      <p id="result-cpu">Cpu: 0</p>
+    </div>
+  </div>
+  <script src="src/scripts/app.js"></script>
+</body>
+</html>
